@@ -89,3 +89,7 @@ def from_json():
         else:
             # pass quietly
             continue
+
+from_json()
+print Content.existing_content
+to_json()
