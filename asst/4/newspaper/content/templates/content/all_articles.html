@@ -1,0 +1,13 @@
+<h2>Homepage!</h2>
+
+<p>There are a bunch of articles below. Enjoy!</p>
+
+{% if articles %}
+    <ul>
+    {% for a in articles %}
+        <li><a href="/{{ a.id }}/">{{ a.title }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No articles are available.</p>
+{% endif %}
